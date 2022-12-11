@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>DojoWeather</h1>
+            <nav>
+                <a href="#" onclick="ciudad()">Burbank</a>
+                <a href="#" onclick="ciudad()">Chicago</a>
+                <a href="#" onclick="ciudad()">Dallas</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="main-bloque">
+            <div class="cabeza-bloque">
+                <h1>San Jose</h1>
+                <div class="cabeza-bloque">
+                    <p>show temperature in</p>
+                    <select onchange="cambiarTemp(this)">
+                        <option value="ºC">ºC</option>
+                        <option value="ºF">ºF</option>
+                    </select>
+                </div>
+            </div>
+            <div id="cuerpo-bloque">
+                <div class="bloque-clima">
+                    <h2>Today</h2>
+                    <img class="img-clima" src="assets/some_rain.png" alt="">
+                    <p>some rain</p>
+                    <div class="grados">
+                        <h4><span class="temp">24</span>º</h4> 
+                        <h4><span class="temp">18</span>º</h4> 
+                    </div>
+                </div>
+                <div class="bloque-clima">
+                    <h2>Tomorrow</h2>
+                    <img class="img-clima" src="assets/some_sun.png" alt="">
+                    <p>some sun</p>
+                    <div class="grados">
+                        <h4><span class="temp">27</span>º</h4> 
+                        <h4><span class="temp">19</span>º</h4> 
+                    </div>
+                </div>
+                <div class="bloque-clima">
+                    <h2>Friday</h2>
+                    <img class="img-clima" src="assets/some_clouds.png" alt="">
+                    <p>some clouds</p>
+                    <div class="grados">
+                        <h4><span class="temp">21</span>º</h4> 
+                        <h4><span class="temp">16</span>º</h4> 
+                    </div>
+                </div>
+                <div class="bloque-clima">
+                    <h2>Saturday</h2>
+                    <img class="img-clima" src="assets/some_sun.png" alt="">
+                    <p>some sun</p>
+                    <div class="grados">
+                        <h4><span class="temp">26</span>º</h4> 
+                        <h4><span class="temp">21</span>º</h4> 
+                    </div>
+                </div>
+
+            </div>
+            <div id="cookie">
+                <img src="assets/cookie.png" alt="">
+                <div>
+                    <h3>Stop! Cookie time</h3>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read More...</a></p>
+                </div>
+                <button onclick="borrar('#cookie')">I Accept</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

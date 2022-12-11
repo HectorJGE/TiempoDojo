@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+}
+header{
+    display: flex;
+    background-color: #9fc5f8;
+    justify-content: center;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+}
+#main-bloque{
+    width: 1000px;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.cabeza-bloque,#cuerpo-bloque{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabeza-bloque *{
+    margin: 10px;
+}
+
+#main-bloque>.cabeza-bloque{
+    border-bottom: 3px solid black;
+}
+
+header div *{
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+#cuerpo-bloque{
+    margin-top: 30px;
+}
+.bloque-clima{
+    text-align: center;
+    flex:1;
+    background-color:#eeeeee;
+}
+.bloque-clima *{margin: 15px 0px;
+}
+
+.bloque-clima+.bloque-clima{
+    margin-left: 40px;
+}
+.img-clima{
+    width: 150px;
+    border-radius: 50%;
+}
+.grados{
+    display: flex;
+    justify-content: space-around;
+}
+.grados h4{
+    color: red;
+}
+.grados h4+h4{
+    color: blue;
+}
+#cookie{
+    display: flex;
+    align-items: center;
+    border: 5px solid black;
+    position: fixed;
+    bottom: 50px;
+}
+
+#cookie>div{
+    width: 750px;
+}
+
+#cookie *{
+    margin: 10px;
+}
+
+#cookie button{
+    cursor: pointer;
+    padding:5px 10px;
+    background-color:#9fc5f8 ;
+    box-shadow: 1px 1px black;
+}
+
+#cookie button:hover{
+    background-color:#3e84df ;
+
+}
+#cookie img{
+    height:100px;
+}
